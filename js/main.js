@@ -267,6 +267,18 @@ jQuery(document).ready(function($) {
 	};
 	siteDatePicker();
 
-	
+	// Sticky navbar with scroll effect
+	var stickyNavbar = function() {
+		var navbar = $('.site-navbar');
+		
+		$(window).on('scroll', function() {
+			if ($(this).scrollTop() > 50) {
+				navbar.addClass('scrolled');
+			} else {
+				navbar.removeClass('scrolled');
+			}
+		});
+	};
+	stickyNavbar();
 
 });

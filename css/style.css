@@ -38,7 +38,8 @@ a {
   line-height: 1; }
 
 .site-wrap {
-  position: relative; }
+  position: relative;
+  padding-top: 80px; }
   .site-wrap:before {
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
@@ -273,8 +274,19 @@ a {
   margin-bottom: 0px;
   width: 100%;
   border-bottom: none;
-  position: absolute;
-  z-index: 99; }
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: all 0.3s ease;
+  background: transparent;
+  backdrop-filter: blur(0px);
+}
+
+.site-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
   .site-navbar .site-logo {
     font-weight: 200; }
     .site-navbar .site-logo a {

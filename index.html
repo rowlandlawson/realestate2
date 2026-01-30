@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Homeland &mdash; Colorlib Website Template</title>
+    <title>PropInvest - Real Estate Investment Platform</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,6 +23,39 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+      }
+      .btn-login, .btn-signup {
+        padding: 8px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s;
+      }
+      .btn-login {
+        color: white;
+        border: 2px solid white;
+      }
+      .btn-login:hover {
+        background: white;
+        color: #667eea;
+      }
+      .btn-signup {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+      }
+      .btn-signup:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+      }
+    </style>
     
   </head>
   <body>
@@ -44,7 +77,7 @@
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Homeland<span class="text-danger">.</span></strong></a></h1>
+              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>PropInvest<span class="text-danger">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -55,27 +88,23 @@
                   <li class="active">
                     <a href="index.html">Home</a>
                   </li>
-                  <li><a href="buy.html">Buy</a></li>
-                  <li><a href="rent.html">Rent</a></li>
-                  <li class="has-children">
-                    <a href="properties.html">Properties</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Condo</a></li>
-                      <li><a href="#">Property Land</a></li>
-                      <li><a href="#">Commercial Building</a></li>
-                      <li class="has-children">
-                        <a href="#">Sub Menu</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                  <li class="d-lg-none"><a href="#opportunities">Investment Opportunities</a></li>
+                  <li class="d-lg-none"><a href="#how-it-works">How It Works</a></li>
+                  <li class="d-lg-none"><a href="#about">About</a></li>
+                  <li class="d-lg-none"><a href="contact.html">Contact</a></li>
+                  <li class="dropdown d-none d-lg-inline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      More
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#how-it-works">How It Works</a>
+                      <a class="dropdown-item" href="#about">About</a>
+                      <a class="dropdown-item" href="contact.html">Contact</a>
+                      <a class="dropdown-item" href="#opportunities">Investment Opportunities</a>
+                    </div>
                   </li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="login.html" class="btn btn-login">Sign In</a></li>
+                  <li><a href="signup.html" class="btn btn-signup px-3">Sign Up</a></li>
                 </ul>
               </nav>
             </div>
@@ -92,10 +121,11 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-10">
-              <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">For Rent</span>
-              <h1 class="mb-2">871 Crenshaw Blvd</h1>
-              <p class="mb-5"><strong class="h2 text-success font-weight-bold">$2,250,500</strong></p>
-              <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">See Details</a></p>
+              <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">Premium Investment</span>
+              <h1 class="mb-2">Modern Downtown Residential Complex</h1>
+              <p class="mb-2"><strong>Expected Annual Return: 12-15%</strong></p>
+              <p class="mb-5"><strong class="h2 text-success font-weight-bold">Invest from $50,000</strong></p>
+              <p><a href="signup.html" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Start Investing Now</a></p>
             </div>
           </div>
         </div>
@@ -105,10 +135,11 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-10">
-              <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">For Sale</span>
-              <h1 class="mb-2">625 S. Berendo St</h1>
-              <p class="mb-5"><strong class="h2 text-success font-weight-bold">$1,000,500</strong></p>
-              <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">See Details</a></p>
+              <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">Luxury Property Sale</span>
+              <h1 class="mb-2">Premium Waterfront Estate</h1>
+              <p class="mb-2"><strong>5 Bedrooms • 4 Bathrooms • 8,500 SQ FT</strong></p>
+              <p class="mb-5"><strong class="h2 text-success font-weight-bold">$3,500,000</strong></p>
+              <p><a href="signup.html" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">View Details & Buy</a></p>
             </div>
           </div>
         </div>
@@ -123,42 +154,44 @@
           <form class="form-search col-md-12" style="margin-top: -100px;">
             <div class="row  align-items-end">
               <div class="col-md-3">
-                <label for="list-types">Listing Types</label>
+                <label for="list-types">Investment Type</label>
                 <div class="select-wrap">
                   <span class="icon icon-arrow_drop_down"></span>
                   <select name="list-types" id="list-types" class="form-control d-block rounded-0">
-                    <option value="">Condo</option>
-                    <option value="">Commercial Building</option>
-                    <option value="">Land Property</option>
+                    <option value="">Residential</option>
+                    <option value="">Commercial</option>
+                    <option value="">Mixed-Use</option>
+                    <option value="">Land Development</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-3">
-                <label for="offer-types">Offer Type</label>
+                <label for="offer-types">Investment Strategy</label>
                 <div class="select-wrap">
                   <span class="icon icon-arrow_drop_down"></span>
                   <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                    <option value="">For Sale</option>
-                    <option value="">For Rent</option>
-                    <option value="">For Lease</option>
+                    <option value="">Income Generating</option>
+                    <option value="">Capital Appreciation</option>
+                    <option value="">Fix & Flip</option>
+                    <option value="">Passive Income</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-3">
-                <label for="select-city">Select City</label>
+                <label for="select-city">Select Location</label>
                 <div class="select-wrap">
                   <span class="icon icon-arrow_drop_down"></span>
                   <select name="select-city" id="select-city" class="form-control d-block rounded-0">
                     <option value="">New York</option>
-                    <option value="">Brooklyn</option>
-                    <option value="">London</option>
-                    <option value="">Japan</option>
-                    <option value="">Philippines</option>
+                    <option value="">Los Angeles</option>
+                    <option value="">Miami</option>
+                    <option value="">San Francisco</option>
+                    <option value="">Chicago</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-3">
-                <input type="submit" class="btn btn-success text-white btn-block rounded-0" value="Search">
+                <input type="submit" class="btn btn-success text-white btn-block rounded-0" value="Search Properties">
               </div>
             </div>
           </form>
@@ -196,7 +229,7 @@
       </div>
     </div>
 
-    <div class="site-section site-section-sm bg-light">
+    <div class="site-section site-section-sm bg-light" id="opportunities">
       <div class="container">
       
         <div class="row mb-5">
@@ -204,30 +237,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-danger">Sale</span>
-                  <span class="offer-type bg-success">Rent</span>
+                  <span class="offer-type bg-success">Investment</span>
+                  <span class="offer-type bg-info">12% ROI</span>
                 </div>
                 <img src="images/img_1.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">625 S. Berendo St</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Downtown Residential Tower</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> New York City, NY</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">Min. Investment: $50,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
-                    <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs">Units</span>
+                    <span class="property-specs-number">240</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs">Occupancy</span>
+                    <span class="property-specs-number">95%</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">7,000</span>
+                    <span class="property-specs">Term</span>
+                    <span class="property-specs-number">5 Yrs</span>
                     
                   </li>
                 </ul>
@@ -240,30 +273,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-danger">Sale</span>
-                  <span class="offer-type bg-success">Rent</span>
+                  <span class="offer-type bg-success">Investment</span>
+                  <span class="offer-type bg-info">14% ROI</span>
                 </div>
                 <img src="images/img_2.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite active"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">871 Crenshaw Blvd</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 1 New York Ave, Warners Bay, NSW 2282</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Luxury Ocean View Complex</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Miami Beach, FL</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">Min. Investment: $75,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
-                    <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs">Units</span>
+                    <span class="property-specs-number">180</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs">Occupancy</span>
+                    <span class="property-specs-number">98%</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">1,620</span>
+                    <span class="property-specs">Term</span>
+                    <span class="property-specs-number">5 Yrs</span>
                     
                   </li>
                 </ul>
@@ -276,29 +309,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-info">Lease</span>
+                  <span class="offer-type bg-warning">Sale</span>
+                  <span class="offer-type bg-danger">Luxury</span>
                 </div>
                 <img src="images/img_3.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">853 S Lucerne Blvd</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Modern Estate Property</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Beverly Hills, CA</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">$4,200,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
                     <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs-number">6</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs-number">5</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">5,500</span>
+                    <span class="property-specs-number">9,500</span>
                     
                   </li>
                 </ul>
@@ -311,30 +345,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-danger">Sale</span>
-                  <span class="offer-type bg-success">Rent</span>
+                  <span class="offer-type bg-success">Investment</span>
+                  <span class="offer-type bg-info">10% ROI</span>
                 </div>
                 <img src="images/img_4.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">625 S. Berendo St</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Commercial Office Space</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Chicago, IL</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">Min. Investment: $100,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
-                    <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs">Floors</span>
+                    <span class="property-specs-number">15</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs">Occupancy</span>
+                    <span class="property-specs-number">92%</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">7,000</span>
+                    <span class="property-specs">Term</span>
+                    <span class="property-specs-number">7 Yrs</span>
                     
                   </li>
                 </ul>
@@ -347,30 +381,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-danger">Sale</span>
-                  <span class="offer-type bg-success">Rent</span>
+                  <span class="offer-type bg-warning">Sale</span>
+                  <span class="offer-type bg-info">Ready</span>
                 </div>
                 <img src="images/img_5.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">871 Crenshaw Blvd</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 1 New York Ave, Warners Bay, NSW 2282</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Waterfront Property</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> San Francisco, CA</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">$5,800,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
                     <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs-number">5</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs-number">4</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">1,620</span>
+                    <span class="property-specs-number">8,200</span>
                     
                   </li>
                 </ul>
@@ -383,29 +417,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-info">Lease</span>
+                  <span class="offer-type bg-success">Investment</span>
+                  <span class="offer-type bg-info">13% ROI</span>
                 </div>
                 <img src="images/img_6.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">853 S Lucerne Blvd</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Boutique Hotel Investment</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Austin, TX</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">Min. Investment: $80,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
-                    <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs">Rooms</span>
+                    <span class="property-specs-number">120</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs">Occupancy</span>
+                    <span class="property-specs-number">85%</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">5,500</span>
+                    <span class="property-specs">Term</span>
+                    <span class="property-specs-number">5 Yrs</span>
                     
                   </li>
                 </ul>
@@ -418,30 +453,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-danger">Sale</span>
-                  <span class="offer-type bg-success">Rent</span>
+                  <span class="offer-type bg-warning">Sale</span>
+                  <span class="offer-type bg-info">Pending</span>
                 </div>
                 <img src="images/img_7.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">625 S. Berendo St</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Contemporary Penthouse</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Manhattan, NY</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">$3,950,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
                     <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs-number">4</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs-number">3</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">7,000</span>
+                    <span class="property-specs-number">6,800</span>
                     
                   </li>
                 </ul>
@@ -454,30 +489,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-danger">Sale</span>
-                  <span class="offer-type bg-success">Rent</span>
+                  <span class="offer-type bg-success">Investment</span>
+                  <span class="offer-type bg-info">11% ROI</span>
                 </div>
                 <img src="images/img_8.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">871 Crenshaw Blvd</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 1 New York Ave, Warners Bay, NSW 2282</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Retail Shopping Center</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Houston, TX</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">Min. Investment: $120,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
-                    <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs">Shops</span>
+                    <span class="property-specs-number">45</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs">Occupancy</span>
+                    <span class="property-specs-number">96%</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">1,620</span>
+                    <span class="property-specs">Term</span>
+                    <span class="property-specs-number">10 Yrs</span>
                     
                   </li>
                 </ul>
@@ -490,29 +525,30 @@
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">
                 <div class="offer-type-wrap">
-                  <span class="offer-type bg-info">Lease</span>
+                  <span class="offer-type bg-warning">Sale</span>
+                  <span class="offer-type bg-danger">Luxury</span>
                 </div>
                 <img src="images/img_1.jpg" alt="Image" class="img-fluid">
               </a>
               <div class="p-4 property-body">
                 <a href="#" class="property-favorite"><span class="icon-heart-o"></span></a>
-                <h2 class="property-title"><a href="property-details.html">853 S Lucerne Blvd</a></h2>
-                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> 853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005</span>
-                <strong class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+                <h2 class="property-title"><a href="property-details.html">Country Club Estate</a></h2>
+                <span class="property-location d-block mb-3"><span class="property-icon icon-room"></span> Scottsdale, AZ</span>
+                <strong class="property-price text-primary mb-3 d-block text-success">$2,750,000</strong>
                 <ul class="property-specs-wrap mb-3 mb-lg-0">
                   <li>
                     <span class="property-specs">Beds</span>
-                    <span class="property-specs-number">2 <sup>+</sup></span>
+                    <span class="property-specs-number">5</span>
                     
                   </li>
                   <li>
                     <span class="property-specs">Baths</span>
-                    <span class="property-specs-number">2</span>
+                    <span class="property-specs-number">4</span>
                     
                   </li>
                   <li>
-                    <span class="property-specs">SQ FT</span>
-                    <span class="property-specs-number">5,500</span>
+                    <span class="property-specs">Acres</span>
+                    <span class="property-specs-number">2.5</span>
                     
                   </li>
                 </ul>
@@ -543,9 +579,9 @@
         <div class="row justify-content-center">
           <div class="col-md-7 text-center">
             <div class="site-section-title">
-              <h2>Why Choose Us?</h2>
+              <h2>Why Choose PropInvest?</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe architecto error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur corporis, eaque, deleniti cupiditate officia.</p>
+            <p>PropInvest is a leading real estate investment platform that connects investors with premium property opportunities. We provide transparent, vetted investments with competitive returns and professional property management.</p>
           </div>
         </div>
 
@@ -553,64 +589,64 @@
           <div class="col-md-6 col-lg-4">
             <a href="#" class="service text-center">
               <span class="icon flaticon-house"></span>
-              <h2 class="service-heading">Research Subburbs</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</p>
-              <p><span class="read-more">Read More</span></p>
+              <h2 class="service-heading">Verified Properties</h2>
+              <p>All properties are carefully vetted and due diligence completed before offering to our investors. Professional appraisals and market analysis ensure quality investments.</p>
+              <p><span class="read-more">Learn More</span></p>
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
             <a href="#" class="service text-center">
               <span class="icon flaticon-sold"></span>
-              <h2 class="service-heading">Sold Houses</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</p>
-              <p><span class="read-more">Read More</span></p>
+              <h2 class="service-heading">Strong Returns</h2>
+              <p>Our portfolio delivers average returns of 10-15% annually through a mix of income-generating properties and capital appreciation opportunities.</p>
+              <p><span class="read-more">View Returns</span></p>
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
             <a href="#" class="service text-center">
               <span class="icon flaticon-camera"></span>
-              <h2 class="service-heading">Security Priority</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</p>
-              <p><span class="read-more">Read More</span></p>
+              <h2 class="service-heading">Professional Management</h2>
+              <p>Our experienced team handles all aspects of property management, from tenant relations to maintenance, ensuring smooth operations and maximum returns.</p>
+              <p><span class="read-more">Explore More</span></p>
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light">
+    <div class="site-section bg-light" id="how-it-works">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center">
             <div class="site-section-title">
-              <h2>Recent Blog</h2>
+              <h2>How It Works</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe architecto error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur corporis, eaque, deleniti cupiditate officia.</p>
+            <p>Start your investment journey in just 4 simple steps. Our streamlined process makes real estate investing accessible and transparent.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
             <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
             <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
+              <span class="d-block text-secondary small text-uppercase font-weight-bold">Step 1</span>
+              <h2 class="h5 text-black mb-3"><a href="#">Create Your Account</a></h2>
+              <p>Sign up for free and complete your investor profile. Provide basic information and set your investment preferences and goals.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
             <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
             <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
+              <span class="d-block text-secondary small text-uppercase font-weight-bold">Step 2</span>
+              <h2 class="h5 text-black mb-3"><a href="#">Browse Opportunities</a></h2>
+              <p>Explore our curated selection of premium investment opportunities. Access detailed property information, financial projections, and risk assessments.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
             <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
             <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
+              <span class="d-block text-secondary small text-uppercase font-weight-bold">Step 3 & 4</span>
+              <h2 class="h5 text-black mb-3"><a href="#">Invest & Earn Returns</a></h2>
+              <p>Complete your investment and join our growing investor community. Monitor your portfolio and receive regular updates on property performance and returns.</p>
             </div>
           </div>
 
@@ -620,13 +656,13 @@
     </div>
 
     
-    <div class="site-section">
+    <div class="site-section" id="about">
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-7">
           <div class="site-section-title text-center">
-            <h2>Our Agents</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima quibusdam, laboriosam.</p>
+            <h2>Our Investment Team</h2>
+            <p>Meet the experienced professionals managing your investments with integrity and expertise.</p>
           </div>
         </div>
       </div>
@@ -638,9 +674,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae minus obcaecati provident beatae!</p>
+                <h2 class="mb-2 font-weight-light text-black h4">Sarah Johnson</h2>
+                <span class="d-block mb-3 text-white-opacity-05">Chief Investment Officer</span>
+                <p>With 15+ years in real estate investment, Sarah leads our acquisition and portfolio management strategy. Her expertise ensures every property meets our strict investment criteria.</p>
                 <p>
                   <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
@@ -658,9 +694,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cumque vitae voluptates culpa earum similique corrupti itaque veniam doloribus amet perspiciatis recusandae sequi nihil tenetur ad, modi quos id magni!</p>
+                <h2 class="mb-2 font-weight-light text-black h4">Marcus Thompson</h2>
+                <span class="d-block mb-3 text-white-opacity-05">Property Manager</span>
+                <p>Marcus oversees all operational aspects of our properties with a focus on maximizing tenant satisfaction and property value. He has managed over $500M in real estate assets.</p>
                 <p>
                   <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
@@ -678,9 +714,9 @@
 
               <div class="text">
 
-                <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illo iusto, inventore, iure dolorum officiis modi repellat nobis, praesentium perspiciatis, explicabo. Atque cupiditate, voluptates pariatur odit officia libero veniam quo.</p>
+                <h2 class="mb-2 font-weight-light text-black h4">Emily Chen</h2>
+                <span class="d-block mb-3 text-white-opacity-05">Financial Analyst</span>
+                <p>Emily provides rigorous financial analysis and due diligence for all investment opportunities. Her background in corporate finance and real estate ensures transparent reporting.</p>
                 <p>
                   <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
                   <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
@@ -703,8 +739,8 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Homeland</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
+              <h3 class="footer-heading mb-4">About PropInvest</h3>
+              <p>PropInvest is revolutionizing real estate investing by making premium properties accessible to all investors. With a focus on transparency, quality, and strong returns, we're building a community of successful real estate investors.</p>
             </div>
 
             
@@ -713,22 +749,22 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="row mb-5">
               <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Navigations</h3>
+                <h3 class="footer-heading mb-4">Quick Links</h3>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Buy</a></li>
-                  <li><a href="#">Rent</a></li>
-                  <li><a href="#">Properties</a></li>
+                  <li><a href="#opportunities">Investments</a></li>
+                  <li><a href="#how-it-works">How It Works</a></li>
+                  <li><a href="#about">Our Team</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
+                  <li><a href="login.html">Sign In</a></li>
+                  <li><a href="signup.html">Create Account</a></li>
                   <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
                 </ul>
               </div>
             </div>
@@ -754,9 +790,7 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> PropInvest. All rights reserved.
             </p>
           </div>
           
