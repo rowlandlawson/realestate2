@@ -39,7 +39,7 @@ a {
 
 .site-wrap {
   position: relative;
-  padding-top: 80px; }
+   }
   .site-wrap:before {
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
